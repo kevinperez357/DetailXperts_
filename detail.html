@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle Automotriz</title>
+    <link rel="icon" type="image/jpeg" href="1.jpg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav img {
+            height: 70px;
+            margin-right: 15px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+        }
+        .nav a:hover {
+            background: red;
+            border-radius: 5px;
+        }
+        .contenido {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .boton {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            background: red;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .boton:hover {
+            background: darkred;
+        }
+        .acerca {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.7);
+            font-family: 'Georgia', serif;
+            padding: 50px;
+        }
+        .acerca p {
+            font-size: 1.8rem;
+            width: 80%;
+            max-width: 900px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="2.jpg" alt="Logo DetailXperts">
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+    
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="https://www.pexels.com/download/video/6873154/" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+    </div>
+    
+    <div class="contenido" id="inicio">
+        <h1>Brilla como nuevo</h1>
+        <p>Servicio profesional de detallado automotriz</p>
+        <a href="tel:+123456789" class="boton">Agenda tu cita ahora</a>
+    </div>
+    
+    <div class="acerca" id="acerca">
+        <h1>Acerca de DetailXperts</h1>
+        <p>DetailXperts, un taller de detallado automotriz, se especializa en dejar los carros impecables, tanto por fuera como por dentro. No es solo un lavado normal, sino un trabajo más minucioso. Limpiando a profundidad la pintura, eliminan rayones superficiales, aplican ceras o recubrimientos cerámicos para protegerla y hacen que brille como nuevo. También detallando el interior, limpiando alfombras, asientos, plásticos y hasta acondicionando el cuero. Básicamente, es como un spa de lujo para los coches.</p>
+    </div>
+</body>
+</html>
+
+
